@@ -5,25 +5,40 @@ body {
     text-align: center;
 }
 
-.logo-top{
-    font-size: 3rem;
-    font-weight: 900;
+.logo-top {
+    font-size: 1.5rem;
     color: #aaa;
 }
 
-.logo-bottom{
-margin-top: -2rem;
-}
-
-#nav {
-    clear: both;
-    background-color: #eee;
-    padding:  .01rem;
+.logo-bottom {
+    font-size: 4rem;
+    margin-top: -2rem;
 }
 
 #game-area {
+    padding: 1rem 0 1rem 0;
+    position: relative;
+}
+
+.selection {
+    display: inline-block;
+    padding: .5rem;
+}
+
+.text-label {
+    position: relative;
+    bottom: 1rem;
+}
+
+.icon {
+    cursor:pointer;
     font-size: 5rem;
-    padding: 2rem 0 2rem 0;
+ 
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    color: rgb(255, 0, 0)
 }
 
 #score-area {
@@ -31,7 +46,6 @@ margin-top: -2rem;
     max-width: 25rem;
     margin: auto;
     height: 10rem;
-
 }
 
 #player1 {
@@ -45,14 +59,19 @@ margin-top: -2rem;
     float: right;
 }
 
-
-.choice{
+.choice {
     height: 5rem;
 }
-.score{
+.score {
     height: 5rem;
 }
 
 #rules {
     clear: both;
+}
+
+#nav {
+    clear: both;
+    background-color: #eee;
+    padding:  .01rem;
 }

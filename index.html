@@ -6,34 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/30e08522fa.js" crossorigin="anonymous"></script>
     <title>Let's Play RPSLS!</title>
 </head>
 <body>
+   
     <div id="logo">
-        <p>Let's Play RPSLS!</p>
-        <p>(Rock-Paper-Scissors-Lizard-Spock)</p>
+        <p class="logo-top">Let's Play RPSLS!</p>
+        <p class="logo-bottom">(Rock-Paper-Scissors-Lizard-Spock)</p>
     </div>
-    <div id="nav">
-        <p>Single player mode (vs cpu)</p>
+
+    <!-- Main game area -->
+    <div id="game-area">
+        <i class="icon fa-regular fa-hand-back-fist"></i>
+        <i class="icon fa-regular fa-hand"></i>
+        <i class="icon fa-regular fa-hand-peace"></i>
+        <i class="icon fa-regular fa-hand-lizard"></i>
+        <i class="icon fa-regular fa-hand-spock"></i>
+    </div>
+
+    <div id="score-area">
+        <div id="player1">
+            <div class="choice" id="player1-choice"></div>
+                <p>PLAYER</p>
+                <p>score</p>
+            <div class="score" id="player1-score"></div>
+        </div>
+        <div id="cpu">
+            <div class="choice" id="cpu-choice"></div>
+                <p>COMPUTER</p>
+                <p>score</p>
+                <div class="score" id="cpu-score"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="rules">
+        <p>First to five wins!</p>       
+    </div>
+      <!-- Navigation between single- and multiplayer -->
+      <div id="nav">
+        <!-- Current Mode -->
+        <p>Single player mode (vs cpu)</p> 
         <p><a href="multiplayer.html">Switch to multiplayer mode</a></p>
     </div>
-    <div id="game-area">
-        <i class="fa-regular fa-hand-back-fist"></i>
-        <i class="fa-regular fa-hand"></i>
-        <i class="fa-regular fa-hand-peace"></i>
-        <i class="fa-regular fa-hand-lizard"></i>
-        <i class="fa-regular fa-hand-spock"></i>
-    </div>
-    <div id="score-area">
-        <p>player names</p> 
-        <p>score tally</p> 
-    </div>
-    <div id="rules">
-        <p>rules</p>       
-    </div>
-    
+
 </body>
 </html>

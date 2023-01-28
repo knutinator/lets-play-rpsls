@@ -1,1 +1,58 @@
-body {font-family: 'Sofia Sans', sans-serif;}
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.logo-top{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #aaa;
+}
+
+.logo-bottom{
+margin-top: -2rem;
+}
+
+#nav {
+    clear: both;
+    background-color: #eee;
+    padding:  .01rem;
+}
+
+#game-area {
+    font-size: 5rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#score-area {
+    width: 75%;
+    max-width: 25rem;
+    margin: auto;
+    height: 10rem;
+
+}
+
+#player1 {
+    padding: 1rem;
+    float: left;
+}
+
+
+#cpu {
+    padding: 1rem;
+    float: right;
+}
+
+
+.choice{
+    height: 5rem;
+}
+.score{
+    height: 5rem;
+}
+
+#rules {
+    clear: both;
+}

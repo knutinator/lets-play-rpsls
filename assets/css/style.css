@@ -16,7 +16,7 @@ body {
 }
 
 #game-area {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 2rem 0;
     position: relative;
 }
 
@@ -33,7 +33,7 @@ body {
 .icon {
     cursor:pointer;
     font-size: 5rem;
- 
+    transition: 100ms;
 }
 
 .icon:hover {
@@ -68,6 +68,7 @@ body {
 
 #rules {
     clear: both;
+    margin-bottom: 4rem;
 }
 
 #nav {

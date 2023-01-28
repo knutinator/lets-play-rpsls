@@ -26,4 +26,4 @@ Features
 - Animation showing which player won the current round
 - Score tally, showing how many rounds has been won by each player
 - Animation showing which player won the game
-- Section displaying the game rules
+- Section displaying the game rules (included in the "round-win" message)

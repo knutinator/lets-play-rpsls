@@ -20,17 +20,19 @@ body {
     position: relative;
 }
 
-.selection {
+.sel {
     display: inline-block;
     padding: .5rem;
 }
 
 .text-label {
+   
     position: relative;
     bottom: 1rem;
 }
 
 .icon {
+    
     cursor:pointer;
     font-size: 5rem;
     transition: 100ms;

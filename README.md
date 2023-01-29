@@ -27,3 +27,9 @@ Features
 - Score tally, showing how many rounds has been won by each player
 - Animation showing which player won the game
 - Section displaying the game rules (included in the "round-win" message)
+
+
+## Credits
+
+Scripts:
+JavaScript code is based in parts on: https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/

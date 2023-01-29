@@ -6,10 +6,16 @@ let playerChoiceContainer = document.querySelector("#game-area");
 playerChoiceContainer.addEventListener("click", handlePlayerChoice);
 
 function handlePlayerChoice(event) {
+    if (!event.target.classList.contains("icon")) {
+        return;
+    } else {
 
     playerChoice = event.target.dataset.choice;
     console.log(playerChoice);
+    }
 }
+
+// maybe add function to stop function if something else is clicked //
   
     
 // Make the computer choose an icon randomly //

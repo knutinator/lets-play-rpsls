@@ -1,20 +1,21 @@
-
-// Activate game when player clicks an icon //
-
-
-// randomize a CPU choice + display it in game area //
+// Get the players choice of icon //
 
 
-// compare player and CPU choices //
+
+// Make the computer choose an icon randomly //
 
 
-// Display winner message per round //
+
+// compare the icons, determine winner //
 
 
-// count and display the scores for each player //
+
+// display round winner message and increase score tally //
 
 
-// check if any player has 5 points and display game winner message //
+
+// check if any player has 5 points and display game win message //
 
 
-// display button to reload game when winner has been decided //
+
+// display button to restart the game //

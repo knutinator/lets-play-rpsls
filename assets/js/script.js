@@ -28,7 +28,28 @@ function cpuPlay() {
 let cpuOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 let randomNumber = Math.floor(Math.random() * 5);
 cpuChoice = cpuOptions[randomNumber];
-// display the computer's choice (change the id of the icon in game area to get styling with grey color) //
+
+
+
+// display the computer's choice (change styling of cpu choice icon) //
+
+/* if (cpuChoice === "rock") {
+    document.getElementById("rock")
+}
+else if (cpuChoice === "paper") {
+    document.getElementById("paper")
+}
+else if (cpuChoice === "scissors") {
+    document.getElementById("scissors")
+}
+else if (cpuChoice === "lizard") {
+    document.getElementById("lizard")
+}
+else if (cpuChoice === "spock") {
+    document.getElementById("spock")
+};
+ */
+
 
 detWinner();
 }
@@ -48,6 +69,7 @@ let win10 = "Rock crushes Scissors!"
 
 function detWinner() {
 
+    // Draw //
     if (playerChoice === cpuChoice) {
         winMessage = win0;
     }
@@ -142,34 +164,27 @@ function detWinner() {
         incCpuScore();
     }
 
-// Adds 1 to the score of the winner , parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
+// display round winner message and increase score tally, parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
 
 function incPlayerScore() {
     playerScore++;
     let playerScoreNew = document.getElementById("player1-score");
     playerScoreNew.textContent = `${playerScore}`;
+    updateWinMessage();
 }
 
 function incCpuScore() {
     cpuScore++;
     let cpuScoreNew = document.getElementById("cpu-score");
     cpuScoreNew.textContent = `${cpuScore}`;
+    updateWinMessage();
  }
 
-
-
-
-    console.log(winMessage);
-
+function updateWinMessage() {
+    let winMessageNew = document.getElementById("winner-message-area");
+    winMessageNew.textContent = `${winMessage}`;
+}
  }
-
-
-
-
-
-
-// display round winner message and increase score tally //
-
 
 
 // check if any player has 5 points and display game win message //

@@ -13,13 +13,23 @@ function handlePlayerChoice(event) {
     playerChoice = event.target.dataset.choice;
     console.log(playerChoice);
     }
+    cpuPlay();
 }
-
-// maybe add function to stop function if something else is clicked //
-  
     
-// Make the computer choose an icon randomly //
+function cpuPlay() {
+let cpuChoice = "";
 
+// Make the computer choose an icon randomly //
+let cpuOptions = ["rock", "paper", "scissors", "lizard", "spock"];
+let randomNumber = Math.floor(Math.random() * 5);
+cpuChoice = cpuOptions[randomNumber];
+console.log(cpuChoice);
+
+
+// display the computer's choice //
+
+
+}
 
 
 // compare the icons, determine winner //

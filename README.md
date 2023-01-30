@@ -32,4 +32,7 @@ Features
 ## Credits
 
 Scripts:
-JavaScript code is based in parts on: https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/
+
+Code for determining player choice was inspired by: https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/
+
+Code for increasing score tally was inspired by: https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html

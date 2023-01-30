@@ -1,9 +1,10 @@
-// Get the players choice of icon //
+// Get the player's choice of icon //
 
 let playerChoice = "";
 let cpuChoice = "";
-let playerScore;
-let cpuScore;
+
+let playerScore = 0;
+let cpuScore = 0;
 
 let playerChoiceContainer = document.querySelector("#game-area");
 
@@ -27,16 +28,12 @@ function cpuPlay() {
 let cpuOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 let randomNumber = Math.floor(Math.random() * 5);
 cpuChoice = cpuOptions[randomNumber];
-
-
-
 // display the computer's choice (change the id of the icon in game area to get styling with grey color) //
 
 detWinner();
 }
 
-
-// compare the icons, determine winner //
+// compare the icons, determine winner, display message //
 let win0 = "Draw!"
 let win1 = "Scissors cuts Paper!"
 let win2 = "Paper covers Rock!"
@@ -49,7 +46,6 @@ let win8 = "Paper disproves Spock!"
 let win9 = "Spock vaporizes Rock!"
 let win10 = "Rock crushes Scissors!"
 
-
 function detWinner() {
 
     if (playerChoice === cpuChoice) {
@@ -58,96 +54,113 @@ function detWinner() {
     // Scissors + Paper //
     else if (playerChoice === "scissors" && cpuChoice === "paper") {
         winMessage = win1;
-        playerScore = playerScore++;
+        incPlayerScore();
     }
     else if (playerChoice === "paper" && cpuChoice === "scissors") {
         winMessage = win1;
-        cpuScore = cpuScore++;
+        incCpuScore();
     }
     // Paper + Rock //
     else if (playerChoice === "paper" && cpuChoice === "rock") {
         winMessage = win2;
-        playerScore = playerScore++;
+        incPlayerScore();
     }
     else if (playerChoice === "rock" && cpuChoice === "paper") {
         winMessage = win2;
-        cpuScore = cpuScore++;
+        incCpuScore();
     }
     // Rock + Lizard //
     else if (playerChoice === "rock" && cpuChoice === "lizard") {
         winMessage = win3;
-        playerScore = playerScore++;
+        incPlayerScore();
     }
     else if (playerChoice === "lizard" && cpuChoice === "rock") {
         winMessage = win3;
-        cpuScore = cpuScore++;
+        incCpuScore();
     }
     // Lizard + Spock //
     else if (playerChoice === "lizard" && cpuChoice === "spock") {
         winMessage = win4;
-        playerScore = playerScore++;
+        incPlayerScore();
     }
     else if (playerChoice === "spock" && cpuChoice === "lizard") {
         winMessage = win4;
-        cpuScore = cpuScore++;
+        incCpuScore();
     }
     // Spock + Scissors //
     else if (playerChoice === "spock" && cpuChoice === "scissors") {
         winMessage = win5;
-        playerScore = playerScore++;
+        incPlayerScore();
     }
     else if (playerChoice === "scissors" && cpuChoice === "spock") {
         winMessage = win5;
-        cpuScore = cpuScore++;
+        incCpuScore();
     }
     // Scissors + Lizard //
     else if (playerChoice === "scissors" && cpuChoice === "lizard") {
-        winMessage = win5;
-        playerScore = playerScore++;
+        winMessage = win6;
+        incPlayerScore();
     }
     else if (playerChoice === "lizard" && cpuChoice === "scissors") {
-        winMessage = win5;
-        cpuScore = cpuScore++;
+        winMessage = win6;
+        incCpuScore();
     }
     // Lizard + Paper //
     else if (playerChoice === "lizard" && cpuChoice === "paper") {
-        winMessage = win5;
-        playerScore = playerScore++;
+        winMessage = win7;
+        incPlayerScore();
     }
     else if (playerChoice === "paper" && cpuChoice === "lizard") {
-        winMessage = win5;
-        cpuScore = cpuScore++;
+        winMessage = win7;
+        incCpuScore();
     }
     // Paper + Spock //
     else if (playerChoice === "paper" && cpuChoice === "spock") {
-        winMessage = win5;
-        playerScore = playerScore++;
+        winMessage = win8;
+        incPlayerScore();
     }
     else if (playerChoice === "spock" && cpuChoice === "paper") {
-        winMessage = win5;
-        cpuScore = cpuScore++;
+        winMessage = win8;
+        incCpuScore();
     }
     // Spock + Rock //
     else if (playerChoice === "spock" && cpuChoice === "rock") {
-        winMessage = win5;
-        playerScore = playerScore++;
+        winMessage = win9;
+        incPlayerScore();
     }
     else if (playerChoice === "rock" && cpuChoice === "spock") {
-        winMessage = win5;
-        cpuScore = cpuScore++;
+        winMessage = win9;
+        incCpuScore();
     }
     // Rock + Scissors //
     else if (playerChoice === "rock" && cpuChoice === "scissors") {
-        winMessage = win5;
-        playerScore = playerScore++;
+        winMessage = win10;
+        incPlayerScore();
     }
     else if (playerChoice === "scissors" && cpuChoice === "rock") {
-        winMessage = win5;
-        cpuScore = cpuScore++;
+        winMessage = win10;
+        incCpuScore();
     }
+
+// Adds 1 to the score of the winner , parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
+
+function incPlayerScore() {
+    playerScore++;
+    let playerScoreNew = document.getElementById("player1-score");
+    playerScoreNew.textContent = `${playerScore}`;
+}
+
+function incCpuScore() {
+    cpuScore++;
+    let cpuScoreNew = document.getElementById("cpu-score");
+    cpuScoreNew.textContent = `${cpuScore}`;
+ }
+
+
+
+
     console.log(winMessage);
-    console.log(playerScore)
-    console.log(cpuScore)
+
  }
 
 

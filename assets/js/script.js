@@ -1,10 +1,25 @@
-// Get the player's choice of icon //
+
+// Clear styles from previous game round //
+function clearStyles() {
+    let rockStyle = document.getElementById('rock')
+    rockStyle.style.removeProperty("color");
+    let paperStyle = document.getElementById('paper')
+    paperStyle.style.removeProperty("color");
+    let scissorsStyle = document.getElementById('scissors')
+    scissorsStyle.style.removeProperty("color");
+    let lizardStyle = document.getElementById('lizard')
+    lizardStyle.style.removeProperty("color");
+    let spockStyle = document.getElementById('spock')
+    spockStyle.style.removeProperty("color");
+}
 
 let playerChoice = "";
 let cpuChoice = "";
 
 let playerScore = 0;
 let cpuScore = 0;
+
+// Get the player's choice of icon //
 
 let playerChoiceContainer = document.querySelector("#game-area");
 
@@ -18,6 +33,7 @@ function handlePlayerChoice(event) {
     playerChoice = event.target.dataset.choice;
    
     }
+    clearStyles();
     cpuPlay();
 }
     
@@ -27,29 +43,24 @@ function cpuPlay() {
 // Make the computer choose an icon randomly //
 let cpuOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 let randomNumber = Math.floor(Math.random() * 5);
+console.log(randomNumber)
 cpuChoice = cpuOptions[randomNumber];
 
+    // display the computer's choice (change styling of cpu choice icon) //
 
 
-// display the computer's choice (change styling of cpu choice icon) //
-
-/* if (cpuChoice === "rock") {
-    document.getElementById("rock")
+if (cpuChoice === "rock") {
+    document.getElementById("rock").style.color="gray";
+} else if (cpuChoice === "paper") {
+    document.getElementById("paper").style.color="gray";
+} else if (cpuChoice === "scissors") {
+    document.getElementById("scissors").style.color="gray";
+} else  if(cpuChoice === "lizard") {
+    document.getElementById("lizard").style.color="gray";
+} else if (cpuChoice === "spock") {
+    document.getElementById("spock").style.color="gray";
 }
-else if (cpuChoice === "paper") {
-    document.getElementById("paper")
-}
-else if (cpuChoice === "scissors") {
-    document.getElementById("scissors")
-}
-else if (cpuChoice === "lizard") {
-    document.getElementById("lizard")
-}
-else if (cpuChoice === "spock") {
-    document.getElementById("spock")
-};
- */
-
+ 
 
 detWinner();
 }
@@ -72,6 +83,7 @@ function detWinner() {
     // Draw //
     if (playerChoice === cpuChoice) {
         winMessage = win0;
+        updateWinMessage();
     }
     // Scissors + Paper //
     else if (playerChoice === "scissors" && cpuChoice === "paper") {

@@ -1,9 +1,12 @@
+// jshint esversion: 6
+
 // Create main variables for game //
 let playerChoice = "";
 let cpuChoice = "";
 let cpuOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 let playerScore = 0;
 let cpuScore = 0;
+let winMessage = "";
 
 // Clear styles of icons from previous game round //
 function clearStyles() {
@@ -39,17 +42,17 @@ function cpuPlay() {
 // compare the choices, determine round winner, display message //
 function determineWinner() { 
     // round win messages (also explains the rules) //
-    let win0 = "Draw!"
-    let win1 = "Scissors cuts Paper!"
-    let win2 = "Paper covers Rock!"
-    let win3 = "Rock crushes Lizard!"
-    let win4 = "Lizard poisons Spock!"
-    let win5 = "Spock smashes Scissors!"
-    let win6 = "Scissors decapitates Lizard!"
-    let win7 = "Lizard eats Paper!"
-    let win8 = "Paper disproves Spock!"
-    let win9 = "Spock vaporizes Rock!"
-    let win10 = "Rock crushes Scissors!"
+    let win0 = "Draw!";
+    let win1 = "Scissors cuts Paper!";
+    let win2 = "Paper covers Rock!";
+    let win3 = "Rock crushes Lizard!";
+    let win4 = "Lizard poisons Spock!";
+    let win5 = "Spock smashes Scissors!";
+    let win6 = "Scissors decapitates Lizard!";
+    let win7 = "Lizard eats Paper!";
+    let win8 = "Paper disproves Spock!";
+    let win9 = "Spock vaporizes Rock!";
+    let win10 = "Rock crushes Scissors!";
 
     // All possible outcomes of game rounds: //
     // Draw //
@@ -148,7 +151,7 @@ function determineWinner() {
         incCpuScore();
     }
 
-    /* display round winner message and increase score tally, parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html */
+    // display round winner message and increase score tally, parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
     function incPlayerScore() {
         playerScore++;
         let playerScoreNew = document.getElementById("player1-score");

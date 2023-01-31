@@ -5,6 +5,7 @@ body {
     text-align: center;
 }
 
+/* Logo on top of page */
 .logo-top {
     font-size: 1.5rem;
     color: #aaa;
@@ -15,6 +16,7 @@ body {
     margin-top: -2rem;
 }
 
+/* main game area containing icons */
 #game-area {
     padding: 2rem;
     position: relative;
@@ -26,13 +28,11 @@ body {
 }
 
 .text-label {
-   
     position: relative;
     bottom: 1rem;
 }
 
 .icon {
-    
     cursor:pointer;
     font-size: 5rem;
     transition: 100ms;
@@ -43,7 +43,7 @@ body {
     color: rgb(255, 0, 0)
 }
 
-/* Styling for player names and scores */
+/* Player names and scoreboxes */
 #score-area {
     width: 75%;
     max-width: 25rem;
@@ -58,13 +58,17 @@ body {
 
 #scorebox-p {
     border-radius: 1rem;
-    border: 9px solid red;
+    border: 8px solid red;
     width: 4rem;
     padding: 0 1rem 1rem 1rem;
 }
 
 #player1-score {
-font-size:xx-large
+    font-size: xx-large;
+}
+
+.score {
+    height: 5rem;
 }
 
 #cpu {
@@ -74,29 +78,13 @@ font-size:xx-large
 
 #scorebox-c {
     border-radius: 1rem;
-    border: 9px solid grey;
+    border: 8px solid grey;
     width: 4rem;
     padding: 0 1rem 1rem 1rem;
 }
 
 #cpu-score {
-    font-size:xx-large
+    font-size: xx-large;
     }
 
-.choice {
-    height: 5rem;
-}
-.score {
-    height: 5rem;
-}
 
-#rules {
-    clear: both;
-    padding: 4rem;
-}
-
-#nav {
-    clear: both;
-    background-color: #eee;
-    padding:  .01rem;
-}

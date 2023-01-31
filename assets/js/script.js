@@ -1,37 +1,26 @@
-
-// Clear styles from previous game round //
-function clearStyles() {
-    let rockStyle = document.getElementById('rock')
-    rockStyle.style.removeProperty("color");
-    let paperStyle = document.getElementById('paper')
-    paperStyle.style.removeProperty("color");
-    let scissorsStyle = document.getElementById('scissors')
-    scissorsStyle.style.removeProperty("color");
-    let lizardStyle = document.getElementById('lizard')
-    lizardStyle.style.removeProperty("color");
-    let spockStyle = document.getElementById('spock')
-    spockStyle.style.removeProperty("color");
-}
-
+// Create main variables for game //
 let playerChoice = "";
 let cpuChoice = "";
-
+let cpuOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 let playerScore = 0;
 let cpuScore = 0;
 
+// Clear styles of icons from previous game round //
+function clearStyles() {
+    for(let i = 0; i < cpuOptions.length; i++) {
+        let iconStyle = document.getElementById(cpuOptions[i]);
+        iconStyle.style.removeProperty("color");
+      }
+}
+
 // Get the player's choice of icon //
-
 let playerChoiceContainer = document.querySelector("#game-area");
-
 playerChoiceContainer.addEventListener("click", handlePlayerChoice);
-
 function handlePlayerChoice(event) {
     if (!event.target.classList.contains("icon")) {
         return;
     } else {
-
     playerChoice = event.target.dataset.choice;
-   
     }
     clearStyles();
     cpuPlay();
@@ -39,46 +28,33 @@ function handlePlayerChoice(event) {
     
 function cpuPlay() {
 
-
-// Make the computer choose an icon randomly //
-let cpuOptions = ["rock", "paper", "scissors", "lizard", "spock"];
-let randomNumber = Math.floor(Math.random() * 5);
-console.log(randomNumber)
-cpuChoice = cpuOptions[randomNumber];
-
+    // Make the computer choose an icon randomly //
+    let randomNumber = Math.floor(Math.random() * 5);
+    console.log(randomNumber)
+    cpuChoice = cpuOptions[randomNumber];
+        
     // display the computer's choice (change styling of cpu choice icon) //
-
-
-if (cpuChoice === "rock") {
-    document.getElementById("rock").style.color="gray";
-} else if (cpuChoice === "paper") {
-    document.getElementById("paper").style.color="gray";
-} else if (cpuChoice === "scissors") {
-    document.getElementById("scissors").style.color="gray";
-} else  if(cpuChoice === "lizard") {
-    document.getElementById("lizard").style.color="gray";
-} else if (cpuChoice === "spock") {
-    document.getElementById("spock").style.color="gray";
-}
- 
-
-detWinner();
+    document.getElementById(cpuChoice).style.color="gray";
+    determineWinner();
 }
 
-// compare the icons, determine winner, display message //
-let win0 = "Draw!"
-let win1 = "Scissors cuts Paper!"
-let win2 = "Paper covers Rock!"
-let win3 = "Rock crushes Lizard!"
-let win4 = "Lizard poisons Spock!"
-let win5 = "Spock smashes Scissors!"
-let win6 = "Scissors decapitates Lizard!"
-let win7 = "Lizard eats Paper!"
-let win8 = "Paper disproves Spock!"
-let win9 = "Spock vaporizes Rock!"
-let win10 = "Rock crushes Scissors!"
+// compare the choices, determine winner, display message //
+function determineWinner() {
+    
+    // round win messages (also explains the rules) //
+    let win0 = "Draw!"
+    let win1 = "Scissors cuts Paper!"
+    let win2 = "Paper covers Rock!"
+    let win3 = "Rock crushes Lizard!"
+    let win4 = "Lizard poisons Spock!"
+    let win5 = "Spock smashes Scissors!"
+    let win6 = "Scissors decapitates Lizard!"
+    let win7 = "Lizard eats Paper!"
+    let win8 = "Paper disproves Spock!"
+    let win9 = "Spock vaporizes Rock!"
+    let win10 = "Rock crushes Scissors!"
 
-function detWinner() {
+    // All possible outcomes of game: //
 
     // Draw //
     if (playerChoice === cpuChoice) {
@@ -176,28 +152,24 @@ function detWinner() {
         incCpuScore();
     }
 
-// display round winner message and increase score tally, parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
-
-function incPlayerScore() {
-    playerScore++;
-    let playerScoreNew = document.getElementById("player1-score");
-    playerScoreNew.textContent = `${playerScore}`;
-    updateWinMessage();
-}
-
-function incCpuScore() {
-    cpuScore++;
-    let cpuScoreNew = document.getElementById("cpu-score");
-    cpuScoreNew.textContent = `${cpuScore}`;
-    updateWinMessage();
+    // display round winner message and increase score tally, parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
+    function incPlayerScore() {
+        playerScore++;
+        let playerScoreNew = document.getElementById("player1-score");
+        playerScoreNew.textContent = `${playerScore}`;
+        updateWinMessage();
+    }
+    function incCpuScore() {
+        cpuScore++;
+        let cpuScoreNew = document.getElementById("cpu-score");
+        cpuScoreNew.textContent = `${cpuScore}`;
+        updateWinMessage();
+    }
+    function updateWinMessage() {
+        let winMessageNew = document.getElementById("winner-message-area");
+        winMessageNew.textContent = `${winMessage}`;
+    }
  }
-
-function updateWinMessage() {
-    let winMessageNew = document.getElementById("winner-message-area");
-    winMessageNew.textContent = `${winMessage}`;
-}
- }
-
 
 // check if any player has 5 points and display game win message //
 

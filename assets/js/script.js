@@ -8,17 +8,19 @@ let cpuScore = 0;
 // Clear styles of icons from previous game round //
 function clearStyles() {
     for(let i = 0; i < cpuOptions.length; i++) {
-        let iconStyle = document.getElementById(cpuOptions[i]);
-        iconStyle.style.removeProperty("color");
-      }
+            let iconStyle = document.getElementById(cpuOptions[i]);
+            iconStyle.style.removeProperty("color");
+    }
 }
+
+// Run main game loop //
 
 // Get the player's choice of icon //
 let playerChoiceContainer = document.querySelector("#game-area");
 playerChoiceContainer.addEventListener("click", handlePlayerChoice);
 function handlePlayerChoice(event) {
     if (!event.target.classList.contains("icon")) {
-        return;
+            return;
     } else {
     playerChoice = event.target.dataset.choice;
     }
@@ -27,17 +29,14 @@ function handlePlayerChoice(event) {
 }
     
 function cpuPlay() {
-
     // Make the computer choose an icon randomly //
     let randomNumber = Math.floor(Math.random() * 5);
-    console.log(randomNumber)
     cpuChoice = cpuOptions[randomNumber];
         
     // display the computer's choice (change styling of cpu choice icon) //
     document.getElementById(cpuChoice).style.color="gray";
     determineWinner();
 }
-
 // compare the choices, determine winner, display message //
 function determineWinner() {
     
@@ -53,9 +52,7 @@ function determineWinner() {
     let win8 = "Paper disproves Spock!"
     let win9 = "Spock vaporizes Rock!"
     let win10 = "Rock crushes Scissors!"
-
-    // All possible outcomes of game: //
-
+    // All possible outcomes of game rounds: //
     // Draw //
     if (playerChoice === cpuChoice) {
         winMessage = win0;
@@ -151,28 +148,42 @@ function determineWinner() {
         winMessage = win10;
         incCpuScore();
     }
-
     // display round winner message and increase score tally, parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
     function incPlayerScore() {
         playerScore++;
+        checkPlayerScore();
+        console.log(playerScore)
         let playerScoreNew = document.getElementById("player1-score");
         playerScoreNew.textContent = `${playerScore}`;
         updateWinMessage();
+        
     }
     function incCpuScore() {
         cpuScore++;
+        checkPlayerScore();
         let cpuScoreNew = document.getElementById("cpu-score");
         cpuScoreNew.textContent = `${cpuScore}`;
         updateWinMessage();
+        
     }
     function updateWinMessage() {
         let winMessageNew = document.getElementById("winner-message-area");
         winMessageNew.textContent = `${winMessage}`;
     }
- }
+}
 
-// check if any player has 5 points and display game win message //
+// check if any player has 5 points and display game win message, then restart game //
 
-
-
-// display button to restart the game //
+function checkPlayerScore(){
+    if (cpuScore === 5) {
+        alert("You lost... :(");
+        location.reload();
+    } else if (playerScore === 5) {
+        alert("You won!!! :D");
+        location.reload();
+    }else if (playerScore >= 6 || cpuScore >= 6) {
+    alert("ERROR! Something went wrong, please restart the game");
+    location.reload();
+    }
+}
+ 

@@ -16,7 +16,7 @@ function clearStyles() {
     }
 }
 
-// Start game when player clicks an icon //
+// Start game when player clicks an icon (code was inspired by: https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/) //
 let playerChoiceContainer = document.querySelector("#game-area");
 playerChoiceContainer.addEventListener("click", handlePlayerChoice);
 function handlePlayerChoice(event) {
@@ -151,7 +151,7 @@ function determineWinner() {
         incCpuScore();
     }
 
-    // display round winner message and increase score tally, parts of the code below was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html //
+    // display round winner message and increase score tally (code was inspired by https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html) //
     function incPlayerScore() {
         playerScore++;
         let playerScoreNew = document.getElementById("player1-score");

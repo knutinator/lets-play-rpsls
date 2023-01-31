@@ -43,6 +43,7 @@ body {
     color: rgb(255, 0, 0)
 }
 
+/* Styling for player names and scores */
 #score-area {
     width: 75%;
     max-width: 25rem;
@@ -51,15 +52,36 @@ body {
 }
 
 #player1 {
-    padding: 1rem;
+    margin-top: 3rem;
     float: left;
 }
 
+#scorebox-p {
+    border-radius: 1rem;
+    border: 9px solid red;
+    width: 4rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+#player1-score {
+font-size:xx-large
+}
 
 #cpu {
-    padding: 1rem;
+    margin-top: 3rem;
     float: right;
 }
+
+#scorebox-c {
+    border-radius: 1rem;
+    border: 9px solid grey;
+    width: 4rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+#cpu-score {
+    font-size:xx-large
+    }
 
 .choice {
     height: 5rem;
@@ -70,7 +92,7 @@ body {
 
 #rules {
     clear: both;
-    margin-bottom: 4rem;
+    padding: 4rem;
 }
 
 #nav {

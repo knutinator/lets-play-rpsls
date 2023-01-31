@@ -13,8 +13,6 @@ function clearStyles() {
     }
 }
 
-// Run main game loop //
-
 // Get the player's choice of icon //
 let playerChoiceContainer = document.querySelector("#game-area");
 playerChoiceContainer.addEventListener("click", handlePlayerChoice);
@@ -173,7 +171,6 @@ function determineWinner() {
 }
 
 // check if any player has 5 points and display game win message, then restart game //
-
 function checkPlayerScore(){
     if (cpuScore === 5) {
         alert("You lost... :(");
@@ -181,6 +178,7 @@ function checkPlayerScore(){
     } else if (playerScore === 5) {
         alert("You won!!! :D");
         location.reload();
+    // Error handling if score goes above 5 //    
     }else if (playerScore >= 6 || cpuScore >= 6) {
     alert("ERROR! Something went wrong, please restart the game");
     location.reload();

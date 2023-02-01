@@ -35,8 +35,6 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
     - At first, it encourages the user to start the game by clicking one of the icons, while also explaining the win conditions: First to five points wins.
     - When the game has started, the field instead explains the outcome of the latest game round, so the user understands what just happened. This also teaches the user the game rules.
     
-&nbsp;<br>
-
 <i><figcaption>Before game</figcaption></i>
 <img src="assets/readme/rpsls-text1b.png" alt="The explanation field before game" width="50%"/>
 &nbsp;<br>

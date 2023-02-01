@@ -14,42 +14,46 @@
     <title>Let's Play RPSLS!</title>
 </head>
 <body>
-   
+   <!-- logo on top of page -->
     <header id="logo">
         <p class="logo-top">Let's Play</p>
         <p class="logo-bottom">(RPSLS)</p>
     </header>
 
-    <!-- Main game area with icons -->
-    <section id="game-area">
-        <p class="sel"><span class="text-label">Rock</span><br><i aria-label="Rock" id="rock" data-choice="rock" class="icon fa-regular fa-hand-back-fist"></i></p>
-        <p class="sel"><span class="text-label">Paper</span><br><i aria-label="Paper" id="paper" data-choice="paper" class="icon fa-regular fa-hand"></i></p>
-        <p class="sel"><span class="text-label">Scissors</span><br><i aria-label="Scissors" id="scissors" data-choice="scissors" class="icon fa-regular fa-hand-peace"></i></p>
-        <p class="sel"><span class="text-label">Lizard</span><br><i aria-label="Lizard" id="lizard" data-choice="lizard" class="icon fa-regular fa-hand-lizard"></i></p>
-        <p class="sel"><span class="text-label">Spock</span><br><i aria-label="Spock" id="spock" data-choice="spock" class="icon fa-regular fa-hand-spock"></i></p>
-    </section>
+    <!-- Main game area -->
+    <main>
+        <!-- Gameplay interface with icons -->
+        <section id="game-area">
+            <p class="sel"><span class="text-label">Rock</span><br><i aria-label="Rock" id="rock" data-choice="rock" class="icon fa-regular fa-hand-back-fist"></i></p>
+            <p class="sel"><span class="text-label">Paper</span><br><i aria-label="Paper" id="paper" data-choice="paper" class="icon fa-regular fa-hand"></i></p>
+            <p class="sel"><span class="text-label">Scissors</span><br><i aria-label="Scissors" id="scissors" data-choice="scissors" class="icon fa-regular fa-hand-peace"></i></p>
+            <p class="sel"><span class="text-label">Lizard</span><br><i aria-label="Lizard" id="lizard" data-choice="lizard" class="icon fa-regular fa-hand-lizard"></i></p>
+            <p class="sel"><span class="text-label">Spock</span><br><i aria-label="Spock" id="spock" data-choice="spock" class="icon fa-regular fa-hand-spock"></i></p>
+        </section>
 
-    <!-- text area underneath icons showing start message and game rules -->
-    <p id="winner-message-area">Click an icon to play - first to five wins!</p>
+        <!-- text area underneath icons showing start message and game rules -->
+        <p id="winner-message-area">Click an icon to play - first to five wins!</p>
 
-    <!-- area at bottom displaying player names and current score -->
-    <section id="score-area">
-        <div id="player1">
-            <p>PLAYER</p>
-            <div id="scorebox-p">
-                <p>score</p>
-                <span class="score" id="player1-score">0</span>
+        <!-- area at bottom displaying player names and current score -->
+        <section id="score-area">
+            <div id="player1">
+                <p>PLAYER</p>
+                <div id="scorebox-p">
+                    <p>score</p>
+                    <span class="score" id="player1-score">0</span>
+                </div>
             </div>
-        </div>
-        <div id="cpu">
-            <p>COMPUTER</p>
-            <div id="scorebox-c">
-                <p>score</p>
-                <span class="score" id="cpu-score">0</span>
+            <div id="cpu">
+                <p>COMPUTER</p>
+                <div id="scorebox-c">
+                    <p>score</p>
+                    <span class="score" id="cpu-score">0</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
+    <!-- JavaScript file for game functions -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

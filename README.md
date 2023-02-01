@@ -10,7 +10,8 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 ### Existing Features
 
-- Header   
+- Header
+
     - Sits at the top of the page and shows the name of the game in a minimalistic font.
     - Gets the users's attention and creates intrigue about the odd abbreviation.
     - RPSLS is written in brackets to give it a "technical" feel, in line with the game's nerd culture roots.
@@ -21,6 +22,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 &nbsp;<br>
 
 - Game interface
+
     - The game interface displays five icons to choose from, each of them below an explanatory label.
     - The labels doubles as explanation for the abbreviation RPSLS, which sits directly above.
     - When the user touches an icon, it turns bright red and increases in size, indicating that it can be clicked.
@@ -31,6 +33,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 &nbsp;<br>
 
 - Game explanation field
+
     - Below the game icons is a text field that changes use depending of the actions of the user.
     - At first, it encourages the user to start the game by clicking one of the icons, while also explaining the win conditions: First to five points wins.
     - When the game has started, the field instead explains the outcome of the latest game round, so the user understands what just happened. This also teaches the user the game rules.
@@ -43,6 +46,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 &nbsp;<br>
 
 - Game results and score field
+
     - When the user clicks an icon, the JavaScript code chooses an icon for the computer player at random. 
     - The code then determines the winner of the round according to the game rules, and awards a point to the winning player.
     - The scores are counted in the two score boxes, which are clearly marked in an outline color which corresponds with the icon colors of the game field.
@@ -79,7 +83,13 @@ Live link can be found here - [Let's play RPSLS](https://knutinator.github.io/le
 
 ## Credits
 
-Scripts:
+Styling
+
+- Favicon generated using: https://favicon.io/
+
+- Icons implemented using https://fontawesome.com/
+
+Scripts
 
 - Code for determining player choice was inspired by: https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/
 

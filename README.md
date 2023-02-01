@@ -61,6 +61,17 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 - I would like to expand the game with a multiplayer option, so the user can play either against a human or a computer.
 
+### Development
+
+- The development followed this process:
+
+    - First, a barebone file and folder structure was set up for the project.
+    - A simple outline of the needed elements and functions was sketched out in the HTML, CSS and JS files using code comments.
+    - The basic content and elements were written in HTML and styled using CSS.
+    - The JavaScript functions were coded and tested one at a time, to assure code legibility.
+    - After all JavaScript code was functional, some parts with repetitions were refactored into shorter code.
+    - Following testing, validation and bug-fixing, the project was deployed to Github Pages.
+
 ## Testing
 
 - Game was tested and worked perfectly in three different browsers: Chrome, Firefox and Safari.
@@ -72,8 +83,16 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 - All validation passed with no errors detected.
 
 ## Deployment
- - The game site was deployed to Github Pages, using the following method:
- 
+
+- Local deployment:
+
+    - Download the project repository and extract the zip file in a folder on your hard drive.
+    - Open the project folder with an IDE of your choice.
+    - Run the project by dropping index.html into a web browser, or view it on an HTTP server by running the python command: python3 -m http.server
+
+ - Github Pages deployment:
+
+    - Copy or clone the repository.
     - In the Github repository, click the Settings Tab.
     - Select the Pages section.
     - Under the Build and deployment headline, click the dropdown menu under Branch and select "main". 

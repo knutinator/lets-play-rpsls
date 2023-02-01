@@ -10,7 +10,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 ### Existing Features
 
-- Header
+- **Header**
 
     - Sits at the top of the page and shows the name of the game in a minimalistic font.
     - Gets the users's attention and creates intrigue about the odd abbreviation.
@@ -21,7 +21,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 &nbsp;<br>
 
-- Game interface
+- **Game interface**
 
     - The game interface displays five icons to choose from, each of them below an explanatory label.
     - The labels doubles as explanation for the abbreviation RPSLS, which sits directly above.
@@ -32,7 +32,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 &nbsp;<br>
 
-- Game explanation field
+- **Game explanation field**
 
     - Below the game icons is a text field that changes use depending of the actions of the user.
     - At first, it encourages the user to start the game by clicking one of the icons, while also explaining the win conditions: First to five points wins.
@@ -45,7 +45,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 &nbsp;<br>
 
-- Game results and score field
+- **Game results and score field**
 
     - When the user clicks an icon, the JavaScript code chooses an icon for the computer player at random. 
     - The code then determines the winner of the round according to the game rules, and awards a point to the winning player.
@@ -63,7 +63,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 ## Development
 
-- The development followed this process:
+- **The development followed this process:**
 
     - First, a barebone file and folder structure was set up for the project.
     - A simple outline of the needed elements and functions was sketched out in the empty HTML, CSS and JS files using code comments.
@@ -84,13 +84,13 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 ## Deployment
 
-- Local deployment:
+- **Local deployment:**
 
     - Download the project repository and extract the zip file in a folder on your hard drive.
     - Open the project folder with an IDE of your choice.
     - Run the project by dropping index.html into a web browser, or view it on an HTTP server by running the python command: python3 -m http.server
 
- - Github Pages deployment:
+ - **Github Pages deployment:**
 
     - Copy or clone the repository.
     - In the Github repository, click the Settings Tab.
@@ -103,14 +103,12 @@ Live link can be found here - [Let's play RPSLS](https://knutinator.github.io/le
 
 ## Credits
 
-Styling
+- **Styling**
 
-- Favicon generated using: https://favicon.io/
+    - Favicon generated using: https://favicon.io/
+    - Icons implemented using https://fontawesome.com/
 
-- Icons implemented using https://fontawesome.com/
+- **Scripts**
 
-Scripts
-
-- Code for determining player choice was inspired by: https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/
-
-- Code for increasing score tally was inspired by: https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html
+    - Code for determining player choice was inspired by: https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/
+    - Code for increasing score tally was inspired by: https://stackoverflow.com/questions/68074211/make-score-counter-from-javascript-display-as-text-in-html

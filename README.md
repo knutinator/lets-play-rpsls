@@ -4,7 +4,7 @@
 
 The game is also targeted towards people who have heard about the "RPSLS" game from the TV series “The Big Bang Theory”, and wishes to try it out for themselves. 
 
-<img src="assets/readme/rpsls-main-image.png" alt="Game running on devices with different screen sizes"/>
+<img src="assets/readme/rpsls-main-image2.png" alt="Game running on devices with different screen sizes"/>
 
 ## Features
 

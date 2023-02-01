@@ -73,6 +73,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 ## Deployment
  - The game site was deployed to Github Pages, using the following method:
+ 
     - In the Github repository, click the Settings Tab.
     - Select the Pages section.
     - Under the Build and deployment headline, click the dropdown menu under Branch and select "main". 

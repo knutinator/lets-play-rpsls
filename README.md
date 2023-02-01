@@ -38,7 +38,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 &nbsp;<br>
 
 <i><figcaption>Before game</figcaption></i>
-<img src="assets/readme/rpsls-text1b.png" alt="The explanation field before game" width="50%"/><i>
+<img src="assets/readme/rpsls-text1b.png" alt="The explanation field before game" width="50%"/>
 &nbsp;<br>
 <i><figcaption>During game</figcaption></i>
 <img src="assets/readme/rpsls-text2b.png" alt="The explanation field during game" width="30%"/>

@@ -16,7 +16,8 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
     - RPSLS is written in brackets to give it a "technical" feel, in line with the game's nerd culture roots.
 
 
-<center><img src="assets/readme/rpsls-logo.png" alt="Header of game page" width="50%"/></center>
+<img src="assets/readme/rpsls-logo.png" alt="Header of game page" width="50%"/>
+
 &nbsp;<br>
 
 - Game interface
@@ -25,9 +26,10 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
     - When the user touches an icon, it turns bright red and increases in size, indicating that it can be clicked.
     - When clicked, the user's selected icon will remain bright red, while the computers selection will be displayed in gray. 
 
-<center><img src="assets/readme/rpsls-interface2.png" alt="Game interface" width="75%"/></center>
+<img src="assets/readme/rpsls-interface2.png" alt="Game interface" width="75%"/>
 
 &nbsp;<br>
+
 - Game explanation field
     - Below the game icons is a text field that changes use depending of the actions of the user.
     - At first, it encourages the user to start the game by clicking one of the icons, while also explaining the win conditions: First to five points wins.
@@ -35,9 +37,12 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
     
 &nbsp;<br>
 
-<center><img src="assets/readme/rpsls-text1b.png" alt="The explanation field before game" width="50%"/><i><figcaption>Before game</figcaption></i></center>
+<i><figcaption>Before game</figcaption></i>
+<img src="assets/readme/rpsls-text1b.png" alt="The explanation field before game" width="50%"/><i>
 &nbsp;<br>
-<center><img src="assets/readme/rpsls-text2b.png" alt="The explanation field during game" width="30%"/><i><figcaption>During game</figcaption></i></center>
+<i><figcaption>During game</figcaption></i>
+<img src="assets/readme/rpsls-text2b.png" alt="The explanation field during game" width="30%"/>
+
 &nbsp;<br>
 
 - Game results and score field
@@ -47,7 +52,7 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
     - This gives the user a clear view of the current standing of the game, making it easy to play.
     - When either of the players has gained five points, they are declared the winner of the game. A pop-up message tells this to the player, and the game is automatically restarted, when the user clicks the "ok" button.
 
-<center><img src="assets/readme/rpsls-score.png" alt="The score field" width="75%"/></center>
+<img src="assets/readme/rpsls-score.png" alt="The score field" width="75%"/>
 
 &nbsp;<br>
 

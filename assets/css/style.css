@@ -16,9 +16,23 @@ body {
     margin-top: -2rem;
 }
 
+/* Styling to make whole game fit on mobile screens */
+@media screen and (max-width: 425px) {
+    .logo-bottom {
+        margin-bottom: 1rem;
+    }
+    #game-area {
+        padding: 0rem;
+        margin: auto;    
+        width: 90%;
+    }
+    p#winner-message-area {
+        margin-bottom: -1.5rem;
+    }
+  }
+
 /* main game area containing icons */
 #game-area {
-    padding: 2rem;
     position: relative;
 }
 
@@ -46,9 +60,10 @@ body {
 /* Player names and scoreboxes */
 #score-area {
     width: 75%;
-    max-width: 25rem;
-    margin: auto;
-    height: 10rem;
+    max-width: 20rem;
+    margin: 0 auto 0 auto;
+    height: 260px;
+    
 }
 
 #player1 {

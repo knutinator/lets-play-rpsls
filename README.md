@@ -61,12 +61,12 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
 
 - I would like to expand the game with a multiplayer option, so the user can play either against a human or a computer.
 
-### Development
+## Development
 
 - The development followed this process:
 
     - First, a barebone file and folder structure was set up for the project.
-    - A simple outline of the needed elements and functions was sketched out in the HTML, CSS and JS files using code comments.
+    - A simple outline of the needed elements and functions was sketched out in the empty HTML, CSS and JS files using code comments.
     - The basic content and elements were written in HTML and styled using CSS.
     - The JavaScript functions were coded and tested one at a time, to assure code legibility.
     - After all JavaScript code was functional, some parts with repetitions were refactored into shorter code.

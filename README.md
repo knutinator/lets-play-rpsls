@@ -4,7 +4,7 @@
 
 The game is also targeted towards people who have heard about the "RPSLS" game from the TV series “The Big Bang Theory”, and wishes to try it out for themselves. 
 
-![Game running on devices with different screen sizes](assets/readme/rpsls-main-image.png)
+<img src="assets/readme/rpsls-main-image.png" alt="Game running on devices with different screen sizes"/>
 
 ## Features
 
@@ -15,7 +15,9 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
     - Gets the users's attention and creates intrigue about the odd abbreviation.
     - RPSLS is written in brackets to give it a "technical" feel, in line with the game's nerd culture roots.
 
-![Header of game page](assets/readme/rpsls-logo.png)
+
+<center><img src="assets/readme/rpsls-logo.png" alt="Header of game page" width="50%"/></center>
+&nbsp;<br>
 
 - Game interface
     - The game interface displays five icons to choose from, each of them below an explanatory label.
@@ -23,27 +25,31 @@ The game is also targeted towards people who have heard about the "RPSLS" game f
     - When the user touches an icon, it turns bright red and increases in size, indicating that it can be clicked.
     - When clicked, the user's selected icon will remain bright red, while the computers selection will be displayed in gray. 
 
-![Game interface](assets/readme/rpsls-interface2.png)
+<center><img src="assets/readme/rpsls-interface2.png" alt="Game interface" width="75%"/></center>
 
+&nbsp;<br>
 - Game explanation field
     - Below the game icons is a text field that changes use depending of the actions of the user.
     - At first, it encourages the user to start the game by clicking one of the icons, while also explaining the win conditions: First to five points wins.
     - When the game has started, the field instead explains the outcome of the latest game round, so the user understands what just happened. This also teaches the user the game rules.
+    
+&nbsp;<br>
 
-![The explanation field before game](assets/readme/rpsls-text1.png)*<figcaption>Before game</figcaption>*
+<center><img src="assets/readme/rpsls-text1b.png" alt="The explanation field before game" width="50%"/><i><figcaption>Before game</figcaption></i></center>
+&nbsp;<br>
+<center><img src="assets/readme/rpsls-text2b.png" alt="The explanation field during game" width="30%"/><i><figcaption>During game</figcaption></i></center>
+&nbsp;<br>
 
-<br>
-
-![The explanation field during game](assets/readme/rpsls-text2.png)*<figcaption>During game</figcaption>*
-<br>
 - Game results and score field
     - When the user clicks an icon, the JavaScript code chooses an icon for the computer player at random. 
     - The code then determines the winner of the round according to the game rules, and awards a point to the winning player.
     - The scores are counted in the two score boxes, which are clearly marked in an outline color which corresponds with the icon colors of the game field.
     - This gives the user a clear view of the current standing of the game, making it easy to play.
-    - When either of the players has gained five points, they are declared the winner of the game. A pop-up message tells this to the player, and the game is automatically restarted.
+    - When either of the players has gained five points, they are declared the winner of the game. A pop-up message tells this to the player, and the game is automatically restarted, when the user clicks the "ok" button.
 
-![The score field](assets/readme/rpsls-score.png)
+<center><img src="assets/readme/rpsls-score.png" alt="The score field" width="75%"/></center>
+
+&nbsp;<br>
 
 ### Features left to implement
 
